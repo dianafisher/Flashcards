@@ -17,38 +17,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EBR-9V-bJD">
-                                <rect key="frame" x="47" y="132" width="278" height="362"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBR-9V-bJD">
+                                <rect key="frame" x="48.5" y="152.5" width="278" height="362"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSd-VG-d54">
-                                        <rect key="frame" x="0.0" y="0.0" width="273" height="362"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSd-VG-d54">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="362"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the capital of Brazil?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY5-N5-dz4">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the capital of Brazil?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY5-N5-dz4">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="362"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="362" id="IoZ-0D-3If"/>
+                                    <constraint firstAttribute="bottom" secondItem="zSd-VG-d54" secondAttribute="bottom" id="MJY-HT-wFa"/>
+                                    <constraint firstAttribute="trailing" secondItem="sY5-N5-dz4" secondAttribute="trailing" id="OHl-X9-Wtm"/>
+                                    <constraint firstAttribute="width" constant="278" id="PS3-rb-NLn"/>
+                                    <constraint firstAttribute="bottom" secondItem="sY5-N5-dz4" secondAttribute="bottom" id="XoK-Lb-CwW"/>
+                                    <constraint firstItem="sY5-N5-dz4" firstAttribute="leading" secondItem="EBR-9V-bJD" secondAttribute="leading" id="ieg-hl-FhX"/>
+                                    <constraint firstAttribute="trailing" secondItem="zSd-VG-d54" secondAttribute="trailing" id="nkb-8u-JEC"/>
+                                    <constraint firstItem="zSd-VG-d54" firstAttribute="leading" secondItem="EBR-9V-bJD" secondAttribute="leading" id="v4I-iO-n33"/>
+                                    <constraint firstItem="zSd-VG-d54" firstAttribute="top" secondItem="EBR-9V-bJD" secondAttribute="top" id="xHG-YB-6yX"/>
+                                    <constraint firstItem="sY5-N5-dz4" firstAttribute="top" secondItem="EBR-9V-bJD" secondAttribute="top" id="xsk-9w-Ijv"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cBW-uO-RiU" appends="YES" id="1OK-xq-LRR"/>
                                 </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EBR-9V-bJD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LT2-7G-BY5"/>
+                            <constraint firstItem="EBR-9V-bJD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eD9-lu-dZ8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="zSd-VG-d54" id="Lql-Ub-kDE"/>
+                        <outlet property="card" destination="EBR-9V-bJD" id="wzg-O9-Lyb"/>
                         <outlet property="frontLabel" destination="sY5-N5-dz4" id="3Ru-L1-sft"/>
                     </connections>
                 </viewController>
