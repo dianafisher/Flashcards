@@ -18,26 +18,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBR-9V-bJD">
-                                <rect key="frame" x="48.5" y="152.5" width="278" height="362"/>
+                                <rect key="frame" x="48.5" y="100" width="278" height="285"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brasília" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSd-VG-d54">
-                                        <rect key="frame" x="0.0" y="0.0" width="278" height="362"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="285"/>
+                                        <color key="backgroundColor" red="0.42745098040000001" green="0.81176470590000005" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the capital of Brazil?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY5-N5-dz4">
-                                        <rect key="frame" x="0.0" y="0.0" width="278" height="362"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the capital of Brazil?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY5-N5-dz4">
+                                        <rect key="frame" x="0.0" y="0.0" width="278" height="285"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="HiraMaruProN-W4" family="Hiragino Maru Gothic ProN" pointSize="20"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="362" id="IoZ-0D-3If"/>
+                                    <constraint firstAttribute="height" constant="285" id="IoZ-0D-3If"/>
                                     <constraint firstAttribute="bottom" secondItem="zSd-VG-d54" secondAttribute="bottom" id="MJY-HT-wFa"/>
                                     <constraint firstAttribute="trailing" secondItem="sY5-N5-dz4" secondAttribute="trailing" id="OHl-X9-Wtm"/>
                                     <constraint firstAttribute="width" constant="278" id="PS3-rb-NLn"/>
@@ -52,16 +51,64 @@
                                     <outletCollection property="gestureRecognizers" destination="cBW-uO-RiU" appends="YES" id="1OK-xq-LRR"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBK-YP-UAg">
+                                <rect key="frame" x="48.5" y="435" width="278" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vWn-2i-yYd"/>
+                                </constraints>
+                                <state key="normal" title="Rio de Janeiro">
+                                    <color key="titleColor" red="0.42745098039215684" green="0.81176470588235294" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOptionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sJC-Uv-xKF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Drp-8Y-vmO">
+                                <rect key="frame" x="48.5" y="525" width="278" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hKo-iB-13S"/>
+                                </constraints>
+                                <state key="normal" title="Sao Paulo">
+                                    <color key="titleColor" red="0.42745098039215684" green="0.81176470588235294" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7xd-2t-zyU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQA-JL-lgL">
+                                <rect key="frame" x="48.5" y="480" width="278" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ly4-y9-MK3"/>
+                                </constraints>
+                                <state key="normal" title="Brasilia">
+                                    <color key="titleColor" red="0.42745098039215684" green="0.81176470588235294" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapOptionTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EML-MU-dxk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fBK-YP-UAg" firstAttribute="top" secondItem="EBR-9V-bJD" secondAttribute="bottom" constant="50" id="1YE-KK-Fum"/>
+                            <constraint firstItem="FQA-JL-lgL" firstAttribute="top" secondItem="fBK-YP-UAg" secondAttribute="bottom" constant="5" id="8dB-n8-Xif"/>
+                            <constraint firstItem="FQA-JL-lgL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HHB-dL-tew"/>
+                            <constraint firstItem="Drp-8Y-vmO" firstAttribute="top" secondItem="FQA-JL-lgL" secondAttribute="bottom" constant="5" id="HQe-b3-4xu"/>
                             <constraint firstItem="EBR-9V-bJD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LT2-7G-BY5"/>
-                            <constraint firstItem="EBR-9V-bJD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eD9-lu-dZ8"/>
+                            <constraint firstItem="fBK-YP-UAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3d-lP-ePM"/>
+                            <constraint firstItem="Drp-8Y-vmO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cWi-tz-gja"/>
+                            <constraint firstItem="Drp-8Y-vmO" firstAttribute="width" secondItem="FQA-JL-lgL" secondAttribute="width" id="jsb-EF-m4e"/>
+                            <constraint firstItem="FQA-JL-lgL" firstAttribute="width" secondItem="fBK-YP-UAg" secondAttribute="width" id="onl-KX-wtF"/>
+                            <constraint firstItem="fBK-YP-UAg" firstAttribute="width" secondItem="EBR-9V-bJD" secondAttribute="width" id="sAe-LW-vc7"/>
+                            <constraint firstItem="EBR-9V-bJD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="xL0-Lo-Co8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="backLabel" destination="zSd-VG-d54" id="Lql-Ub-kDE"/>
+                        <outlet property="btnOptionOne" destination="fBK-YP-UAg" id="jKg-2j-lvV"/>
+                        <outlet property="btnOptionThree" destination="Drp-8Y-vmO" id="sW9-Ka-YIC"/>
+                        <outlet property="btnOptionTwo" destination="FQA-JL-lgL" id="V0d-iF-DDy"/>
                         <outlet property="card" destination="EBR-9V-bJD" id="wzg-O9-Lyb"/>
                         <outlet property="frontLabel" destination="sY5-N5-dz4" id="3Ru-L1-sft"/>
                     </connections>
